@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+    background: linear-gradient(90deg, #f0bd3b 1.18%, #2bec05 100%);
+}
+
+main {
+    padding: 36px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    background: linear-gradient(90deg, #2b17a0 1.18%, #6c7ee6 100%);
+    color: whitesmoke;
+    padding: 40px;
+}
+
+.header--image{
+    height: 150px;
+    margin-right: 6px;
+    margin-top:4px;
+}
+
+.header--title{
+    font-size: 35px;
+    margin-right: auto;
+
+}
+
+.header--project {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 17px;
+}
+
+.form--input{
+    font-family: "Karla", sans-serif;
+    border-radius:10px;
+    border: 3px solid black;
+    text-indent: 5px;
+    cursor:text;
+}
+
+.form--button {
+    grid-column: 1 / -1;
+    font-family: "Karla", sans-serif;
+    font-size: 20px;
+    border-radius:10px;
+    background: linear-gradient(90deg, #2b17a0 1.18%, #6c7ee6 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.meme {
+    position: relative;
+    
+}
+
+.meme--image {
+    max-width: 900px;
+    max-height: 900px;
+    border-radius: 10px;
+    border-color: linear-gradient(90deg, #2104c7 1.18%, #6c7ee6 100%);
+    border-style: inset;
+    border-width: 0.5em;
+    margin-top: 10px;
+}
+
+.meme--text {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 15px;
+}
+
+.top {
+    top: 15px;
+}
