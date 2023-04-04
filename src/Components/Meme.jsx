@@ -1,4 +1,6 @@
 import React from 'react';
+import Card from './Card.jsx';
+
 let url;
 
 const Meme = () => {
@@ -23,10 +25,7 @@ const Meme = () => {
             ...prevMeme,
             randomImage: url
         }))
-    }
-
-    // console.log(allMemes.length);
-    // console.log(allMemes);
+    }    
 
     function handleChange(event){
         const {name, value} = event.target;
@@ -62,6 +61,13 @@ const Meme = () => {
                 <img src={meme.randomImage} className='meme--image' />
                 <h2 className='meme--text top'>{meme.topText}</h2>
                 <h2 className='meme--text bottom'>{meme.bottomText}</h2>
+            </div>
+            <div>
+                <Card 
+                    saveTopText = {meme.topText}
+                    saveBottomText = {meme.bottomText}
+                    saveURL = {meme.randomImage}
+                />
             </div>
         </main>
     )
