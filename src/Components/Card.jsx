@@ -16,7 +16,7 @@ const Card = (props) => {
                  //!!!!!!!!!!!!!!!!!NEED TO FORMAT RETURN DATA:
     function showMemes() {
         setDisplayMemes(storedMemes.map(item => 
-            <div key={item.id}>{'"'}{item.url}{'"   -  "'}{item.toptext}{'"  -  "'}{item.bottomtext}{'"'}</div>)) 
+            <div key={item.id}>{'ITEM ID '}{item.id}{': "'}{item.url}{'"   -  "'}{item.toptext}{'"  -  "'}{item.bottomtext}{'"'}</div>)) 
             console.log(storedMemes)
     }
 
@@ -66,15 +66,13 @@ const Card = (props) => {
     function updateMeme (){
         const input = document.querySelector('.update--input');
         const id = input.value;
-        const [updatedMeme, setUpdatedMeme] = React.useState([])
+        //const [updatedMeme, setUpdatedMeme] = React.useState([])
 
         fetch(`http://localhost:8000/api/memes/${id}`)
         .then(res => res.json())
-        .then(data => setUpdatedMeme(data))
+        .then(data => console.log(data))
 
-        setDisplayMemes(updatedMeme =>
-            <div key={item.id}>{'"'}{item.url}{'"   -  "'}{item.toptext}{'"  -  "'}{item.bottomtext}{'"'}</div>
-        )
+    
     }
 
     return (
