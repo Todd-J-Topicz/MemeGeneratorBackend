@@ -24,7 +24,8 @@ To run locally, fork/clone the repository, run npm install to install the depend
 
 
 ## Screenshot
-![alt text](src/assets/images/MemeScreenshot.png)
+![alt 
+text](src/assets/images/MemeScreenshot.png)
 
 ## Contributors
 Todd J. Topicz
